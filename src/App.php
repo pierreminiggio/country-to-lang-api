@@ -56,7 +56,6 @@ class App
         $result = curl_exec($curl);
 
         if ($result === false) {
-            die('1');
             http_response_code(500);
 
             return;
